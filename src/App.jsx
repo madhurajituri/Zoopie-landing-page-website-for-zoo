@@ -6,6 +6,7 @@ import Rules from './components/Rules'
 import Play from './components/Play'
 import Twocard from './components/Twocard'
 import Cards from './components/Cards'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Play />
       <Twocard />
       <Cards />
+      <Footer />
     </div>
   )
 }
