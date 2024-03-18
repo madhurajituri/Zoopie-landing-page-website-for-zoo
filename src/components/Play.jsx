@@ -15,8 +15,8 @@ function Play() {
     })
 
     return (
-        <div className='p-[20vh] w-full h-screen bg-zinc-900'>
-            <div className='w-full h-full bg-cover bg-center rounded-3xl relative' style={{ backgroundImage: `url(${leopard})` }}>
+        <div className='p-[20vh] w-full h-screen bg-zinc-900 overflow-hidden'>
+            <div data-scroll data-scroll-speed="-.6" className='w-full h-full bg-cover bg-center rounded-3xl relative' style={{ backgroundImage: `url(${leopard})` }}>
                 <div className='flex gap-5 absolute bg-transparent top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]'>
                     <div className="bg-white flex items-center justify-center rounded-full w-[20vh] h-[20vh]">
                         <div className='w-2/3 bg-black rounded-full h-2/3 flex items-center justify-center'>

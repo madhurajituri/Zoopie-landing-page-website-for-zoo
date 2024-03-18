@@ -1,15 +1,17 @@
 import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 import lion from '../assets/images/lion.png'
+import zoo from '../assets/images/zoo.png'
+import { motion } from 'framer-motion'
 
 function Hero() {
     return (
-        <div className='bg-zinc-900 text-white h-screen w-full pt-10'>
+        <div data-scroll data-scroll-section data-scroll-speed="-.2" className='bg-zinc-900 text-white h-screen w-full pt-10'>
             <div className='justify-between flex'>
                 <div className='textstructure mt-[18vh] px-[5vh] gap-5 w-full'>
                     {["Where every", "roar", "tells a story"].map((item, index) => {
                         return <div key={index} className="masker flex items-center">
-                            {index == 1 && (<div className='bg-red-400 w-[8vw] h-[4vw] rounded-sm mr-4'></div>)}
+                            {index == 1 && (<motion.div initial={{width:0}} animate={{width:"8vw"}} transition={{ease:[0.5, 1, 0.89, 1] , duration:1}} className='w-[8vw] h-[5vw] rounded-sm mr-4 bg-cover bg-center' style={{backgroundImage : `url(${zoo})`}}></motion.div>)}
                             <h1 className='uppercase text-[6vw] tracking-tighter leading-[6vw] font-["Segoe_Print"]'>{item}</h1>
                         </div>
                     })}
